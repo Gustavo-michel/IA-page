@@ -26,20 +26,22 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="styles/styles_form.css">
 </head>
 <header>
-    <nav>
+    <h1>Cadastro</h1>
+</header>
+    <nav class="cadNav">
             <ul>
+                <li><a href="home.html">inicio</a></li>
                 <li><a href="historia.html">historia da IA</a></li>
                 <li><a href="machineLearning.html">machine Learning</a></li>
                 <li><a href="deepLearning.html">Deep Learning</a></li>
-                <li><a href="cadastro.html">Sign in</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li><a href="cadastro.php">cadastro</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
-    </header>
 <body>
     <div class="container">
         <h1>Cadastro</h1>
-        <form action="cadastro.html" method="post">
+        <form action="cadastro.php" method="post">
             <label for="Nome">Nome:</label>
             <input type="text" id="Nome" name="Nome" placeholder="Nome" required><br><br>
 
@@ -59,7 +61,7 @@ if (isset($_POST['submit'])) {
 
             <input type="submit" class="submit" name="submit" value="Cadastrar">
         </form>
-        <p>Não tem conta?<a href="login.html"> Voltar para o Login</a>
+        <p>Não tem conta?<a href="login.php"> Voltar para o Login</a>
     </div>
     </div>
 </body>

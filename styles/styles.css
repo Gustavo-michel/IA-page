@@ -1,20 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('https://fia.com.br/wp-content/uploads/2022/06/machine-learning-fia-o-que-e-importancia-aplicacoes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home_bg {
+    background-image: url('https://sicolos.com.br/wp-content/uploads/2020/08/Inteligencia-Artificial-IA-e-aprendizado-de-maquina_-impulsionando-a-empresa-de-ultima-geracao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #065c85;
-    color: #ffffff;
+    background-color: #21698a;
     padding: 10px;
     text-align: center;
+    background-image: linear-gradient(to bottom, #21698a, #3b85a783);
 }
 
 nav {
-    background-color: #f4f4f4;
-    padding: 10px;
+    background-color: #21698a;
+    padding: 8px;
     text-align: left;
+    background-image: linear-gradient(to bottom, #21698a, #3b85a783);
 }
 
 nav ul {
@@ -29,14 +41,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    padding: 15px 10px;
-    border-radius: 10px;
+    color: #f2f2f2;
+    padding: 20px 15px;
+    border-radius: 20px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #cdfdff;
+    background-color: #6eb8bb7e;
 }
 
 .page-content {
@@ -46,9 +58,46 @@ nav ul li a:hover {
 img {
     max-width: 300px;
     height: 200px;
+    border-radius: 10%;
+    border: 4px solid #6eb8bb;
+    margin-right: 50px;
+}
+h1 {
+    color: #fff; /* Cor do texto (branco) */
+    text-shadow: 0 0 10px rgb(112, 151, 202), 0 0 30px rgb(112, 151, 202), 0 0 30px #2b49ac, 0 0 40px #224acf, 0 0 70px #224acf, 0 0 80px #224acf, 0 0 100px #224acf, 0 0 150px #224acf; 
 }
 
-img[class="index_img"] {
-    max-width: 1980px;
-    height: 720px;
+h2 {
+    color: #50a857;
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    /* background-color: #1a4344b7;
+    padding: 5px;
+    border-radius: 10px; */
+}
+
+#txt_home {
+    color: #f2f2f2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #001524bd; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 0.3px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+footer p {
+    margin-bottom: 10px; /* Espaçamento inferior entre parágrafos */
+    font-size: 12px;
 }
