@@ -31,9 +31,7 @@ if (isset($_POST['submit'])) {
     <nav class="cadNav">
             <ul>
                 <li><a href="home.html">inicio</a></li>
-                <li><a href="historia.html">historia da IA</a></li>
-                <li><a href="machineLearning.html">machine Learning</a></li>
-                <li><a href="deepLearning.html">Deep Learning</a></li>
+                
                 <li><a href="cadastro.php">cadastro</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>
