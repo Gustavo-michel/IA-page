@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Yourself</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .editor {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .console {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            overflow-y: auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: calc(100% - 20px);
+            resize: none;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="editor">
+            <h2>Editor</h2>
+            <textarea id="code" placeholder="Escreva seu código aqui..."></textarea>
+            <button onclick="runCode()">Executar</button>
+        </div>
+        <div class="console" id="console">
+            <h2>Console</h2>
+        </div>
+    </div>
+
+    <script>
+        function runCode() {
+            var code = document.getElementById('code').value;
+            try {
+                var result = eval(code);
+                displayResult(result);
+            } catch (error) {
+                displayError(error);
+            }
+        }
+
+        function displayResult(result) {
+            var consoleOutput = document.getElementById('console');
+            consoleOutput.innerHTML += '<p style="color: green;">' + result + '</p>';
+        }
+
+        function displayError(error) {
+            var consoleOutput = document.getElementById('console');
+            consoleOutput.innerHTML += '<p style="color: red;">' + error + '</p>';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -46,10 +46,10 @@ if (isset($_POST['submit'])) {
         }
 
         nav {
-        background-color: #21698aab;
-        padding: 8px;
-        background-image: linear-gradient(to bottom, #21698a, #3b85a783);
-        text-align: left;
+            background-color: #21698aab;
+            padding: 8px;
+            background-image: linear-gradient(to bottom, #21698a, #3b85a783);
+            text-align: left;
         }
 
         nav ul {
@@ -188,7 +188,7 @@ if (isset($_POST['submit'])) {
             <input type="email" id="Email" name="Email" placeholder="Email" required><br><br>
 
             <label for="telefone">telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="telefone" required><br><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" placeholder="senha"><br><br>
@@ -196,8 +196,8 @@ if (isset($_POST['submit'])) {
             <label for="verifyPassword">Confirme sua senha:</label>
             <input type="password" id="verifyPassword" name="verifyPassword" placeholder="Confirmar senha" required><br><br>
 
-            <!-- <span class="error"><?php error_reporting(E_ERROR | E_PARSE);
-                                        echo $msg; ?></span><br> -->
+            <span class="error"><?php error_reporting(E_ERROR | E_PARSE);
+                                echo $msg; ?></span><br>
 
             <input type="submit" class="submit" name="submit" value="Cadastrar">
         </form>
